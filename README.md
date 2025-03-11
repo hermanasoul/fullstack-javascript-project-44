@@ -5,4 +5,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1b7bdd98e58c97f2ed71/maintainability)](https://codeclimate.com/github/hermanasoul/fullstack-javascript-project-44/maintainability)
 
 ### Brain-even game
-![Alt text for image](https://asciinema.org/connect/87d14d0d-a727-4792-9c21-230ba0f253e6)
+[Link to Ascii.nu example](https://asciinema.org/connect/87d14d0d-a727-4792-9c21-230ba0f253e6)
