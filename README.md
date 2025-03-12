@@ -32,7 +32,7 @@ If you want to enable detailed logs (for debugging or seeing more information), 
 LOGGING_ENABLED=true brain-even
 ```
 ## Example Gameplay
-```bash
+```yaml
 Running game...
 Game description: Answer "yes" if the number is even, otherwise answer "no".
 May I have your name? Alex
@@ -81,7 +81,7 @@ To enable logs (if you need to debug or see detailed information), use the follo
 `LOGGING_ENABLED=true brain-calc`
 
 ## Example Gameplay
-```bash
+```yaml
 Running game...
 Game description: What is the result of the expression?
 May I have your name? Alex
