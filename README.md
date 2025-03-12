@@ -32,7 +32,7 @@ The game will begin immediately, and you'll be prompted to enter your name.
 
 To enable logs (if you need to debug or see detailed information), use the following command:
 
-LOGGING_ENABLED=true brain-calc
+`LOGGING_ENABLED=true brain-calc`
 
 ## Example Gameplay
 ```Running game...
