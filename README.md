@@ -122,6 +122,7 @@ Congratulations, Alex!
 
 ### Brain-GCD Game
 
+[Link to Ascii.nu example](https://asciinema.org/a/OaWhH4p9DDjWHi26TdJdERLyn)
 In this game, you will need to find the greatest common divisor (GCD) of two random numbers. You will be presented with a pair of numbers, and your task is to input the correct GCD of those numbers.
 
 ## Game rules
