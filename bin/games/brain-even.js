@@ -1,4 +1,6 @@
-import runGame from '../src/index.js';
+#!/usr/bin/env node
+
+import runGame from '../../src/index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
