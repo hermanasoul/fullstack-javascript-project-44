@@ -7,6 +7,8 @@
 ### Brain-even game
 [Link to Ascii.nu example](https://asciinema.org/a/IdHDAU1ab7FBr3H8hTBYVAV3G)
 
+## Game Description
+
 In the Brain Even game, you will need to determine whether a given number is even or odd. For each round, a random number will be presented, and you must respond with "yes" if the number is even, or "no" if it is odd.
 
 ## Game Rules
@@ -17,6 +19,12 @@ In the Brain Even game, you will need to determine whether a given number is eve
 
 ## How to Start the Game
 Make sure you have Node.js installed and the required dependencies.
+
+Install dependencies:
+
+```bash
+npm install -g hexlet-code
+```
 
 To start the game, run the following command:
 
@@ -47,7 +55,7 @@ Correct!
 Question: 63
 Your answer: no
 Correct!
-Congratulations, Alex! You won!
+Congratulations, Alex!
 ```
 ## Important Commands
 `brain-even` — Start the "Even or Odd" game.
@@ -70,12 +78,21 @@ In the **Brain Calc** game, you will be solving simple mathematical expressions.
 ## How to Start the Game
 
 1. Make sure you have Node.js installed and the `readline-sync` dependency.
+
+Install dependencies:
+
+```bash
+npm install -g hexlet-code
+```
+
 2. To start the game, run the following command:
 
-   ```bash
+```bash
    brain-calc
+```
 The game will begin immediately, and you'll be prompted to enter your name.
 
+## Enabling Logging
 To enable logs (if you need to debug or see detailed information), use the following command:
 
 `LOGGING_ENABLED=true brain-calc`
@@ -96,9 +113,58 @@ Correct!
 Question: 63 * 81
 Your answer: 5103
 Correct!
-Congratulations, Alex! You won!
+Congratulations, Alex!
 ```
 
 ## Important Commands
 - `brain-calc` — start the calculator game.
 - `LOGGING_ENABLED=true brain-calc` — start the game with logs enabled (useful for debugging).
+
+### Brain-GCD Game
+
+In this game, you will need to find the greatest common divisor (GCD) of two random numbers. You will be presented with a pair of numbers, and your task is to input the correct GCD of those numbers.
+
+## Game rules
+1. The game generates two random numbers.
+2. You need to enter their greatest common divisor (GCD).
+3. If your answer is correct, you will get "Correct!". If it's wrong, you'll get "Wrong answer!" and the game will continue with a new question.
+
+## How to Start the Game
+
+Install dependencies:
+
+```bash
+npm install -g hexlet-code
+```
+To start the game, run the following command:
+
+```bash
+brain-gcd
+```
+The game will start immediately, and you will be prompted to enter your name.
+
+## Enabling Logging
+To enable logging for questions and answers, set the environment variable:
+
+```bash
+LOGGING_ENABLED=true brain-gcd
+```
+
+## Example Gameplay
+```yaml
+Running game...
+Game description: Find the greatest common divisor of given numbers.
+May I have your name? John
+Hello, John!
+Find the greatest common divisor of given numbers.
+Question: 7 82
+Your answer: 1
+Correct!
+Question: 40 61
+Your answer: 1
+Correct!
+Congratulations, John!
+```
+
+
+
