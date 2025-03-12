@@ -1,4 +1,4 @@
-import runGame from '../../src/index.js';
+import runGame from '../src/index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -8,7 +8,7 @@ const generateQuestionAndAnswer = () => {
   const operations = ['+', '-', '*'];
   const operation = operations[Math.floor(Math.random() * operations.length)];
 
-  let question = `${num1} ${operation} ${num2}`;
+  const question = `${num1} ${operation} ${num2}`;
   let correctAnswer;
 
   switch (operation) {

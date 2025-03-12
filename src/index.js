@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const rounds = 3; // Количество раундов
+const rounds = 3;
 
 const runGame = (gameDescription, generateQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
