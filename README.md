@@ -35,7 +35,8 @@ To enable logs (if you need to debug or see detailed information), use the follo
 `LOGGING_ENABLED=true brain-calc`
 
 ## Example Gameplay
-```Running game...
+```yaml
+Running game...
 Game description: What is the result of the expression?
 May I have your name? Alex
 Hello, Alex!
@@ -49,7 +50,8 @@ Correct!
 Question: 63 * 81
 Your answer: 5103
 Correct!
-Congratulations, Alex! You won!```
+Congratulations, Alex! You won!
+```
 
 ## Important Commands
 - brain-calc — start the calculator game.
