@@ -6,3 +6,6 @@
 
 ### Brain-even game
 [Link to Ascii.nu example](https://asciinema.org/connect/87d14d0d-a727-4792-9c21-230ba0f253e6)
+
+### Brain-calc game
+[![asciicast](https://asciinema.org/a/nbFlL7CMUmHBVRX9w9MZ4XCba.svg)](https://asciinema.org/a/nbFlL7CMUmHBVRX9w9MZ4XCba)
