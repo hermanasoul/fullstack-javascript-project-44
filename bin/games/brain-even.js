@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import runGame from '../../src/index.js';
 import readlineSync from 'readline-sync';
 
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
