@@ -2,6 +2,8 @@
 
 import runGame from '../../src/index.js';
 
+console.log('Starting brain-calc game...'); // лог
+
 const gameDescription = 'What is the result of the expression?';
 
 const generateQuestionAndAnswer = () => {
@@ -27,11 +29,18 @@ const generateQuestionAndAnswer = () => {
       throw new Error('Unknown operation');
   }
 
+  console.log(`Generated question: ${question}, correct answer: ${correctAnswer}`); // лог
+
   return { question, correctAnswer };
 };
 
+console.log('Game description and question generation ready.'); // лог
+
 const startGame = () => {
+  console.log('Starting the game...'); // лог перед запуском игры
   runGame(gameDescription, generateQuestionAndAnswer);
 };
+
+startGame();
 
 export default startGame;
