@@ -7,6 +7,52 @@
 ### Brain-even game
 [Link to Ascii.nu example](https://asciinema.org/a/IdHDAU1ab7FBr3H8hTBYVAV3G)
 
+In the Brain Even game, you will need to determine whether a given number is even or odd. For each round, a random number will be presented, and you must respond with "yes" if the number is even, or "no" if it is odd.
+
+## Game Rules
+1. The game will show a random number.
+2. You need to determine if the number is even or odd.
+3. If your answer is incorrect, you will be prompted to try again.
+4. The game consists of 3 rounds, and you need to answer correctly in each round.
+
+## How to Start the Game
+Make sure you have Node.js installed and the required dependencies.
+
+To start the game, run the following command:
+
+```bash
+brain-even
+```
+The game will start immediately, and you will be prompted to enter your name.
+
+## Enable Logs
+If you want to enable detailed logs (for debugging or seeing more information), you can run the game with the following command:
+
+```bash
+LOGGING_ENABLED=true brain-even
+```
+## Example Gameplay
+```bash
+Running game...
+Game description: Answer "yes" if the number is even, otherwise answer "no".
+May I have your name? Alex
+Hello, Alex!
+What is the result of the expression?
+Question: 72
+Your answer: yes
+Correct!
+Question: 91
+Your answer: no
+Correct!
+Question: 63
+Your answer: no
+Correct!
+Congratulations, Alex! You won!
+```
+## Important Commands
+`brain-even` — Start the "Even or Odd" game.
+`LOGGING_ENABLED=true brain-even` — Start the game with logs enabled (useful for debugging).
+
 ### Brain-calc game
 [Link to Ascii.nu example](https://asciinema.org/a/nbFlL7CMUmHBVRX9w9MZ4XCba)
 
@@ -35,7 +81,7 @@ To enable logs (if you need to debug or see detailed information), use the follo
 `LOGGING_ENABLED=true brain-calc`
 
 ## Example Gameplay
-```yaml
+```bash
 Running game...
 Game description: What is the result of the expression?
 May I have your name? Alex
