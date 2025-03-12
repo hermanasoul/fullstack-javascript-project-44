@@ -54,5 +54,5 @@ Congratulations, Alex! You won!
 ```
 
 ## Important Commands
-- brain-calc — start the calculator game.
-- LOGGING_ENABLED=true brain-calc — start the game with logs enabled (useful for debugging).
+- `brain-calc` — start the calculator game.
+- `LOGGING_ENABLED=true brain-calc` — start the game with logs enabled (useful for debugging).
