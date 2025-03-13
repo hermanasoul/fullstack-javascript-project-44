@@ -23,7 +23,7 @@ Make sure you have Node.js installed and the required dependencies.
 Install dependencies:
 
 ```bash
-npm install -g hexlet-code
+npm install -g @hexlet/code
 ```
 
 To start the game, run the following command:
@@ -82,7 +82,7 @@ In the **Brain Calc** game, you will be solving simple mathematical expressions.
 Install dependencies:
 
 ```bash
-npm install -g hexlet-code
+npm install -g @hexlet/code
 ```
 
 2. To start the game, run the following command:
@@ -135,7 +135,7 @@ In this game, you will need to find the greatest common divisor (GCD) of two ran
 Install dependencies:
 
 ```bash
-npm install -g hexlet-code
+npm install -g @hexlet/code
 ```
 To start the game, run the following command:
 
@@ -186,7 +186,7 @@ Make sure you have Node.js installed and the readline-sync dependency.
 # Install dependencies:
 
 ```bash
-npm install -g hexlet-code
+npm install -g @hexlet/code
 ```
 
 # To start the game, run the following command:
@@ -248,7 +248,7 @@ Make sure you have Node.js installed and the readline-sync dependency.
 
 # Install dependencies:
 ```bash
-npm install -g hexlet-code
+npm install -g @hexlet/code
 ```
 
 # To start the game, run the following command:
