@@ -1,22 +1,26 @@
 import readlineSync from 'readline-sync';
 
-const rounds = 3;
+const roundsCount = 3;
 
-const runGame = (gameDescription, generateQuestionAndAnswer) => {
-  console.log('Running game...');  // лог
-  console.log('Game description:', gameDescription);
-
+export const runGame = (description, generateRound, isLoggingEnabled) => {
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(gameDescription);
+  
+  console.log(description); // переместили вывод описания игры сюда
 
-  for (let i = 0; i < rounds; i++) {
-    const { question, correctAnswer } = generateQuestionAndAnswer();
+  for (let i = 0; i < roundsCount; i++) {
+    const { question, correctAnswer } = generateRound();
     console.log(`Question: ${question}`);
+    
     const userAnswer = readlineSync.question('Your answer: ');
 
+    if (isLoggingEnabled) {
+      console.log(`User  Answer: ${userAnswer}`);  // лог на пользователя, выводится только при включенных логах
+    }
+
     if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`${userAnswer} is wrong. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
@@ -26,5 +30,3 @@ const runGame = (gameDescription, generateQuestionAndAnswer) => {
 
   console.log(`Congratulations, ${name}!`);
 };
-
-export default runGame;

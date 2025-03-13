@@ -1,11 +1,16 @@
-import readlineSync from 'readline-sync';
-import { getRandomInt } from '../utils.js';
+#!/usr/bin/env node
 
-const DESCRIPTION = 'Найди число, которое пропущено в арифметической прогрессии.';
+import { runGame } from '../../src/index.js';
 
-const generateProgression = () => {
-  const start = getRandomInt(1, 10);
-  const step = getRandomInt(2, 5);
+const isLoggingEnabled = process.env.LOGGING_ENABLED === 'true';
+
+const gameDescription = 'What number is missing in the progression?';
+
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const generateRound = () => {
+  const start = getRandomNumber(1, 10);
+  const step = getRandomNumber(2, 5);
   const length = 10;
 
   const progression = [];
@@ -13,36 +18,37 @@ const generateProgression = () => {
     progression.push(start + step * i);
   }
 
-  const missingIndex = getRandomInt(0, length - 1);
-  const answer = progression[missingIndex];
+  const missingIndex = getRandomNumber(0, length - 1);
+  const correctAnswer = String(progression[missingIndex]);
   progression[missingIndex] = '..';
 
-  return { progression: progression.join(' '), answer: String(answer) };
-};
-
-export const runGame = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log(DESCRIPTION);
-
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-
-  const roundsCount = 3;
-
-  for (let i = 0; i < roundsCount; i++) {
-    const { progression, answer } = generateProgression();
-    console.log(`Question: ${progression}`);
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (userAnswer !== answer) {
-      console.log(`${userAnswer} is wrong. Correct answer was ${answer}.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
-
-    console.log('Correct!');
+  if (isLoggingEnabled) {
+    console.log(`Generated start: ${start}, step: ${step}, length: ${length}`);
+    console.log(`Progression array: ${progression.join(', ')}`);
   }
 
-  console.log(`Congratulations, ${name}!`);
+  return { 
+    question: progression.join(' '), // возвращаем только вопрос
+    correctAnswer // правильный ответ не выводится здесь
+  };
 };
+
+const checkAnswer = (userAnswer, correctAnswer) => {
+  if (userAnswer === correctAnswer) {
+    console.log('Correct!');
+  } else {
+    // всегда показываем правильный ответ, если пользователь ошибся
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+  }
+};
+
+const startGame = () => {
+  if (isLoggingEnabled) {
+    console.log('Starting the game...');
+  }
+  runGame(gameDescription, generateRound, isLoggingEnabled);
+};
+
+startGame();
+
+export default startGame;
