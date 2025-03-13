@@ -167,5 +167,62 @@ Correct!
 Congratulations, John!
 ```
 
+### Brain-progression game
 
+[Link to Ascii.nu example](https://asciinema.org/a/o7JNOHZxLokw7cwZ9It0LO4kb)
 
+## Game Description
+In the Brain Progression game, you will be presented with a series of numbers that follow an arithmetic progression. One number will be missing, and you need to find it.
+
+## Game Rules
+1. The game will show a sequence of numbers with one number missing, represented as ...
+2. You need to identify the missing number in the progression.
+3. If your answer is wrong, the game will prompt you to try again.
+4. The game consists of 3 rounds, and you need to answer correctly in each round.
+
+## How to Start the Game
+Make sure you have Node.js installed and the readline-sync dependency.
+
+# Install dependencies:
+
+```bash
+npm install -g hexlet-code
+```
+
+# To start the game, run the following command:
+```bash
+brain-progression
+```
+
+The game will begin immediately, and you'll be prompted to enter your name.
+
+## Enabling Logging
+To enable logs (if you need to debug or see detailed information), use the following command:
+
+```bash
+LOGGING_ENABLED=true brain-progression
+```
+
+## Example Gameplay
+
+```yaml
+Running game...
+Game description: What number is missing in the progression?
+May I have your name? Sam
+Hello, Sam!
+What number is missing in the progression?
+Question: 5 7 9 11 13 .. 17 19 21 23
+Your answer: 15
+Correct!
+Question: 2 5 8 .. 14 17 20 23 26 29
+Your answer: 11
+Correct!
+Question: 14 19 24 29 34 39 44 49 54 ..
+Your answer: 59
+Correct!
+Congratulations, Sam!
+```
+
+## Important Commands
+`brain-progression` — start the progression game.
+`LOGGING_ENABLED=true brain-progression` — start the game with logs enabled (useful for debugging).
