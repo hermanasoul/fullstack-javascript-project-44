@@ -226,3 +226,63 @@ Congratulations, Sam!
 ## Important Commands
 `brain-progression` — start the progression game.
 `LOGGING_ENABLED=true brain-progression` — start the game with logs enabled (useful for debugging).
+
+### Brain-prime game
+
+[Link to Ascii.nu example](https://asciinema.org/a/ttaWMjr2CxJLcydMgGxdROocc)
+
+## Game Description
+
+In the Brain Prime game, you will be asked whether a given number is prime or not. You need to answer "yes" if the number is prime, or "no" if it is not.
+
+## Game Rules
+
+1. The game will show a number, and you need to determine if it is prime.
+2. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
+3. If your answer is wrong, the game will prompt you to try again.
+4. The game consists of 3 rounds, and you need to answer correctly in each round.
+
+## How to Start the Game
+
+Make sure you have Node.js installed and the readline-sync dependency.
+
+# Install dependencies:
+```bash
+npm install -g hexlet-code
+```
+
+# To start the game, run the following command:
+```bash
+brain-prime
+```
+The game will begin immediately, and you'll be prompted to enter your name.
+
+## Enabling Logging
+
+To enable logs (if you need to debug or see detailed information), use the following command:
+
+```bash
+LOGGING_ENABLED=true brain-prime
+```
+
+## Example Gameplay
+```yaml
+Running game...
+Game description: Answer "yes" if the given number is prime. Otherwise answer "no".
+May I have your name? Sam
+Hello, Sam!
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 7
+Your answer: yes
+Correct!
+Question: 8
+Your answer: no
+Correct!
+Question: 15
+Your answer: no
+Correct!
+Congratulations, Sam!
+```
+## Important Commands
+`brain-prime` — start the prime number game.
+`LOGGING_ENABLED=true brain-prime` — start the game with logs enabled (useful for debugging).
