@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { runGame } from '../../src/index.js';
+import runGame from '../../src/index.js';
 
 const isLoggingEnabled = process.env.LOGGING_ENABLED === 'true';
 
