@@ -14,7 +14,7 @@ const generateRound = () => {
   const length = 10;
 
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + step * i);
   }
 
@@ -29,7 +29,7 @@ const generateRound = () => {
 
   return {
     question: progression.join(' '), // возвращаем только вопрос
-    correctAnswer // правильный ответ не выводится здесь
+    correctAnswer,
   };
 };
 

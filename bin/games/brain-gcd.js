@@ -29,9 +29,9 @@ const generateQuestionAndAnswer = () => {
     console.log(`Generated question: ${num1} ${num2}, correct answer: ${correctAnswer}`);
   }
 
-  return { 
-    question: `${num1} ${num2}`, 
-    correctAnswer, 
+  return {
+    question: `${num1} ${num2}`,
+    correctAnswer,
   };
 };
 
