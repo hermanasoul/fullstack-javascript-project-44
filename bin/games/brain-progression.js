@@ -33,14 +33,14 @@ const generateRound = () => {
   };
 };
 
-const checkAnswer = (userAnswer, correctAnswer) => {
+/* const checkAnswer = (userAnswer, correctAnswer) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
   } else {
     // всегда показываем правильный ответ, если пользователь ошибся
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
   }
-};
+}; */
 
 const startGame = () => {
   if (isLoggingEnabled) {

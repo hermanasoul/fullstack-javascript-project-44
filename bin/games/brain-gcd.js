@@ -4,10 +4,14 @@ import runGame from '../../src/index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const getGCD = (a, b) => {
+const gcd = (a, b) => {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  
   while (b !== 0) {
     [a, b] = [b, a % b];
   }
+  
   return a;
 };
 
@@ -15,13 +19,13 @@ const generateQuestionAndAnswer = () => {
   const num1 = Math.floor(Math.random() * 100) + 1;
   const num2 = Math.floor(Math.random() * 100) + 1;
 
-  if (process.env.LOGGING_ENABLED) {
+  if (process.env.LOGGING_ENABLED === 'true') {
     console.log(`Generated numbers: ${num1}, ${num2}`);
   }
 
-  const correctAnswer = String(getGCD(num1, num2));
+  const correctAnswer = String(gcd(num1, num2));
 
-  if (process.env.LOGGING_ENABLED) {
+  if (process.env.LOGGING_ENABLED === 'true') {
     console.log(`Generated question: ${num1} ${num2}, correct answer: ${correctAnswer}`);
   }
 
@@ -29,7 +33,7 @@ const generateQuestionAndAnswer = () => {
 };
 
 const startGame = () => {
-  if (process.env.LOGGING_ENABLED) {
+  if (process.env.LOGGING_ENABLED === 'true') {
     console.log('Starting the game...');
   }
 

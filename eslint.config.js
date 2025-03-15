@@ -7,6 +7,10 @@ export default [
     files: ["**/*.js"],
     languageOptions: {
       sourceType: "module", // изменено с commonjs на module
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
     },
   },
   {
