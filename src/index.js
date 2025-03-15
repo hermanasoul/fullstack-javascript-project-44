@@ -6,13 +6,13 @@ const runGame = (description, generateRound, isLoggingEnabled) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  
+
   console.log(description); // переместили вывод описания игры сюда
 
   for (let i = 0; i < roundsCount; i++) {
     const { question, correctAnswer } = generateRound();
     console.log(`Question: ${question}`);
-    
+
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (isLoggingEnabled) {

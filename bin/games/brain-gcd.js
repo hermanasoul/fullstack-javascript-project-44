@@ -4,14 +4,14 @@ import runGame from '../../src/index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (a, b) => {
-  a = Math.abs(a);
-  b = Math.abs(b);
-  
+const gcd = (x, y) => {
+  let a = Math.abs(x);
+  let b = Math.abs(y);
+
   while (b !== 0) {
     [a, b] = [b, a % b];
   }
-  
+
   return a;
 };
 
@@ -29,7 +29,10 @@ const generateQuestionAndAnswer = () => {
     console.log(`Generated question: ${num1} ${num2}, correct answer: ${correctAnswer}`);
   }
 
-  return { question: `${num1} ${num2}`, correctAnswer };
+  return { 
+    question: `${num1} ${num2}`, 
+    correctAnswer, 
+  };
 };
 
 const startGame = () => {

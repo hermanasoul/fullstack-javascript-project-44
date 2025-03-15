@@ -13,7 +13,7 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const getRandomNumber = () => {
   const number = Math.floor(Math.random() * 100) + 1;
-  
+
   if (isLoggingEnabled) {
     console.log(`Generated random number: ${number}`); // лог
   }

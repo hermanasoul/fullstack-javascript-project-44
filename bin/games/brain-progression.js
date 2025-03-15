@@ -27,7 +27,7 @@ const generateRound = () => {
     console.log(`Progression array: ${progression.join(', ')}`);
   }
 
-  return { 
+  return {
     question: progression.join(' '), // возвращаем только вопрос
     correctAnswer // правильный ответ не выводится здесь
   };
